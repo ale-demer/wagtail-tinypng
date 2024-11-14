@@ -3,10 +3,10 @@ from django.urls import path, reverse
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 
-from django.utils.translation import ugettext as _
-from wagtail.contrib.modeladmin.helpers import ButtonHelper
-from wagtail.contrib.modeladmin.options import ModelAdmin, modeladmin_register
-from wagtail.core import hooks
+from django.utils.translation import gettext_lazy as _
+from wagtail_modeladmin.helpers import ButtonHelper
+from wagtail_modeladmin.options import ModelAdmin, modeladmin_register
+from wagtail import hooks
 from wagtail.images import get_image_model
 
 from .models import WagtailTinyPNGImage
